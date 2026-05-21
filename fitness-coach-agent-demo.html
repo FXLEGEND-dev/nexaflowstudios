@@ -25,9 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260521">
+    <link rel="stylesheet" href="agent-demo.css?v=20260521">
   </head>
-  <body>
+  <body class="agent-page">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
@@ -60,13 +61,17 @@
 
     <main id="main">
       <section class="agent-hero">
-        <div>
+        <div class="agent-hero-copy">
           <p class="eyebrow">Interactive demo</p>
           <h1>Try The Fitness Coach AI Agent</h1>
           <p>
             This browser demo shows how an AI assistant can qualify a new fitness lead, answer common questions, and
             prepare a coach-ready summary.
           </p>
+          <div class="agent-hero-actions">
+            <a class="button primary" href="#agent-demo">Start Demo</a>
+            <a class="button secondary dark-secondary" href="fitness-coach-lead-demo.html">View Case Study</a>
+          </div>
         </div>
         <div class="agent-note">
           <strong>Demo mode</strong>
@@ -74,7 +79,7 @@
         </div>
       </section>
 
-      <section class="agent-workspace" aria-label="Fitness coach AI agent demo">
+      <section class="agent-workspace" id="agent-demo" aria-label="Fitness coach AI agent demo">
         <div class="agent-chat-panel">
           <div class="agent-panel-header">
             <div>
@@ -155,7 +160,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="agent-demo.js"></script>
+    <script src="script.js?v=20260521"></script>
+    <script src="agent-demo.js?v=20260521"></script>
   </body>
 </html>
