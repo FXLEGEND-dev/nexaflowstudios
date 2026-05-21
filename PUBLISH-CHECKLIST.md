@@ -26,7 +26,15 @@ NexaFlow AI Studio
 
 Keep it if you like it. If not, ask Codex to rename the site everywhere.
 
-## 3. Choose A Domain
+## 3. Current Public URL
+
+Until a custom domain is connected, the GitHub Pages URL should be:
+
+```text
+https://fxlegend-dev.github.io/nexaflowstudios/
+```
+
+## 4. Choose A Custom Domain Later
 
 Good domain examples:
 
@@ -40,7 +48,7 @@ Avoid domains that make the business sound unrelated, overly corporate, or confu
 
 Before buying, search the name and domain to avoid obvious conflicts.
 
-## 4. Publish With Netlify
+## 5. Publish With Netlify
 
 Beginner-friendly path:
 
@@ -50,7 +58,7 @@ Beginner-friendly path:
 4. Netlify gives you a public URL.
 5. Later, connect your custom domain.
 
-## 5. Publish With GitHub Pages
+## 6. Publish With GitHub Pages
 
 Alternative path:
 
@@ -60,7 +68,7 @@ Alternative path:
 4. Choose the branch and folder.
 5. Save and wait for the public URL.
 
-## 6. Final Checks
+## 7. Final Checks
 
 - Open the site on desktop.
 - Open the site on mobile.
@@ -71,7 +79,7 @@ Alternative path:
 - Make sure the offer is clear.
 - Make sure the first call to action is easy to find.
 
-## 7. Next Business Asset
+## 8. Next Business Asset
 
 After publishing, create a demo:
 
