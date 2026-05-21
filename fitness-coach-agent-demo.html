@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Try a browser-based AI lead qualification agent demo for a fitness coach by NexaFlow AI Studio."
+    >
+    <meta name="theme-color" content="#0f766e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Working Fitness Coach AI Agent Demo | NexaFlow AI Studio">
+    <meta
+      property="og:description"
+      content="Try a sample AI assistant that qualifies fitness leads and creates a coach-ready summary."
+    >
+    <meta property="og:url" content="https://fxlegend-dev.github.io/nexaflowstudios/fitness-coach-agent-demo.html">
+    <meta property="og:site_name" content="NexaFlow AI Studio">
+    <link rel="canonical" href="https://fxlegend-dev.github.io/nexaflowstudios/fitness-coach-agent-demo.html">
+    <title>Working Fitness Coach AI Agent Demo | NexaFlow AI Studio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand-mark" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" data-menu-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html#services">Services</a>
+          <a href="fitness-coach-lead-demo.html">Demo Page</a>
+          <a href="fitness-coach-agent-demo.html">Agent Demo</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="index.html#contact">Book Free Review</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="agent-hero">
+        <div>
+          <p class="eyebrow">Interactive demo</p>
+          <h1>Try The Fitness Coach AI Agent</h1>
+          <p>
+            This browser demo shows how an AI assistant can qualify a new fitness lead, answer common questions, and
+            prepare a coach-ready summary.
+          </p>
+        </div>
+        <div class="agent-note">
+          <strong>Demo mode</strong>
+          <span>No private data is stored. This version runs only in your browser.</span>
+        </div>
+      </section>
+
+      <section class="agent-workspace" aria-label="Fitness coach AI agent demo">
+        <div class="agent-chat-panel">
+          <div class="agent-panel-header">
+            <div>
+              <p class="eyebrow">StrongStart assistant</p>
+              <h2>Lead Qualification Chat</h2>
+            </div>
+            <button class="button secondary reset-button" type="button" data-agent-reset>Reset</button>
+          </div>
+
+          <div class="agent-chat-window" data-agent-chat aria-live="polite"></div>
+
+          <form class="agent-input-row" data-agent-form>
+            <label class="sr-only" for="agentInput">Type your response</label>
+            <input id="agentInput" data-agent-input type="text" autocomplete="off" placeholder="Type your answer..." required>
+            <button class="button primary" type="submit">Send</button>
+          </form>
+
+          <div class="quick-replies" data-quick-replies aria-label="Quick reply options"></div>
+        </div>
+
+        <aside class="agent-summary-panel" aria-labelledby="summaryPanelTitle">
+          <p class="eyebrow">Coach view</p>
+          <h2 id="summaryPanelTitle">Live Lead Summary</h2>
+          <div class="agent-summary" data-agent-summary>
+            <p class="empty-summary">The lead summary will appear here as the conversation progresses.</p>
+          </div>
+          <button class="button primary copy-button" type="button" data-copy-summary disabled>Copy Summary</button>
+          <p class="copy-status" role="status" data-copy-status></p>
+        </aside>
+      </section>
+
+      <section class="section agent-explainer" aria-labelledby="agentExplainerTitle">
+        <div class="section-heading">
+          <p class="eyebrow">What this proves</p>
+          <h2 id="agentExplainerTitle">This Is The System A Client Would Understand</h2>
+          <p>
+            A real client does not need to understand APIs or prompt engineering. They need to see the business outcome:
+            faster replies, better lead details, and a clean handoff before the consultation.
+          </p>
+        </div>
+        <div class="deliverable-grid">
+          <div>Lead intake flow</div>
+          <div>FAQ-style response logic</div>
+          <div>Coach-ready summary</div>
+          <div>Booking recommendation</div>
+          <div>Follow-up messaging</div>
+          <div>Clear handoff for the business owner</div>
+        </div>
+      </section>
+
+      <section class="section demo-cta" aria-labelledby="agentCtaTitle">
+        <div>
+          <p class="eyebrow">Ready for the next version?</p>
+          <h2 id="agentCtaTitle">This Demo Can Become A Real Client System</h2>
+          <p>
+            The next layer is connecting this flow to a real form, WhatsApp workflow, email notification, or CRM.
+          </p>
+        </div>
+        <a class="button primary" href="index.html#contact">Book A Free AI Review</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand-mark footer-brand" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+        <p>Practical AI systems for growing small businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#services">Services</a>
+        <a href="fitness-coach-lead-demo.html">Demo Page</a>
+        <a href="fitness-coach-agent-demo.html">Agent Demo</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="agent-demo.js"></script>
+  </body>
+</html>
