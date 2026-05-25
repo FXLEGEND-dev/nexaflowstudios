@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Try a browser-based car sales AI lead qualification demo by NexaFlow AI Studio for dealerships and small-to-mid-sized automotive businesses."
+    >
+    <meta name="theme-color" content="#0f766e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Car Sales AI Agent Demo | NexaFlow AI Studio">
+    <meta
+      property="og:description"
+      content="Try a sample AI assistant that qualifies dealership leads and prepares a salesperson-ready summary."
+    >
+    <meta property="og:url" content="https://fxlegend-dev.github.io/nexaflowstudios/car-sales-agent-demo.html">
+    <meta property="og:site_name" content="NexaFlow AI Studio">
+    <link rel="canonical" href="https://fxlegend-dev.github.io/nexaflowstudios/car-sales-agent-demo.html">
+    <title>Car Sales AI Agent Demo | NexaFlow AI Studio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css?v=20260525">
+    <link rel="stylesheet" href="agent-demo.css?v=20260525">
+  </head>
+  <body class="agent-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand-mark" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" data-menu-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#demos">Demos</a>
+          <a href="real-estate-agent-demo.html">Real Estate Demo</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="index.html#contact">Book Free Review</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="agent-hero">
+        <div class="agent-hero-copy">
+          <p class="eyebrow">Interactive demo</p>
+          <h1>Try The Car Sales AI Agent</h1>
+          <p>
+            This browser demo shows how an AI assistant can help a dealership respond faster, collect buyer details, and
+            prepare a clear sales summary before a human salesperson follows up.
+          </p>
+          <div class="agent-hero-actions">
+            <a class="button primary" href="#agent-demo">Start Demo</a>
+            <a class="button secondary dark-secondary" href="index.html#demos">See All Demos</a>
+          </div>
+        </div>
+        <div class="agent-note">
+          <strong>Demo mode</strong>
+          <span>No private data is stored. This version runs only in your browser.</span>
+        </div>
+      </section>
+
+      <section class="agent-workspace" id="agent-demo" aria-label="Car sales AI agent demo">
+        <div class="agent-chat-panel">
+          <div class="agent-panel-header">
+            <div>
+              <p class="eyebrow">Dealership lead assistant</p>
+              <h2>Buyer Qualification Chat</h2>
+            </div>
+            <button class="button secondary reset-button" type="button" data-agent-reset>Reset</button>
+          </div>
+
+          <div class="agent-chat-window" data-agent-chat aria-live="polite"></div>
+
+          <form class="agent-input-row" data-agent-form>
+            <label class="sr-only" for="agentInput">Type your response</label>
+            <input id="agentInput" data-agent-input type="text" autocomplete="off" placeholder="Type your answer..." required>
+            <button class="button primary" type="submit">Send</button>
+          </form>
+
+          <div class="quick-replies" data-quick-replies aria-label="Quick reply options"></div>
+        </div>
+
+        <aside class="agent-summary-panel" aria-labelledby="summaryPanelTitle">
+          <p class="eyebrow">Sales team view</p>
+          <h2 id="summaryPanelTitle">Live Buyer Summary</h2>
+          <div class="agent-summary" data-agent-summary>
+            <p class="empty-summary">The buyer summary will appear here as the conversation progresses.</p>
+          </div>
+          <button class="button primary copy-button" type="button" data-copy-summary disabled>Copy Summary</button>
+          <p class="copy-status" role="status" data-copy-status></p>
+        </aside>
+      </section>
+
+      <section class="section agent-explainer" aria-labelledby="agentExplainerTitle">
+        <div class="section-heading">
+          <p class="eyebrow">What this proves</p>
+          <h2 id="agentExplainerTitle">A Dealership Gets Cleaner Buyer Info Before Replying</h2>
+          <p>
+            The first version can support website inquiries, copied WhatsApp messages, Facebook leads, or manual lead
+            review. Full WhatsApp or CRM automation can be added later with official integrations.
+          </p>
+        </div>
+        <div class="deliverable-grid">
+          <div>Vehicle interest capture</div>
+          <div>Budget and finance details</div>
+          <div>Trade-in questions</div>
+          <div>Timeline and test-drive intent</div>
+          <div>Salesperson-ready summary</div>
+          <div>Follow-up recommendation</div>
+        </div>
+      </section>
+
+      <section class="section demo-cta" aria-labelledby="agentCtaTitle">
+        <div>
+          <p class="eyebrow">For dealerships and automotive teams</p>
+          <h2 id="agentCtaTitle">This Demo Can Become A Real Client System</h2>
+          <p>
+            NexaFlow can adapt this flow for car dealerships, car brokers, rental companies, and performance vehicle
+            sales teams.
+          </p>
+        </div>
+        <a class="button primary" href="index.html#contact">Book A Free AI Review</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand-mark footer-brand" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+        <p>Practical AI systems for small and mid-sized businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#demos">Demos</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260525"></script>
+    <script>
+      window.nexaAgentDemo = {
+        botLabel: "Car Sales AI Assistant",
+        leadLabel: "Buyer Lead",
+        summaryTitle: "Dealership Buyer Lead Summary",
+        bridgeMessage:
+          "Thanks. I will ask a few quick questions so the sales team can understand what vehicle you want and how ready you are to move forward.",
+        completionMessage:
+          "Great. I have prepared a clear buyer summary for the sales team so they can follow up with relevant stock, finance options, or test-drive times.",
+        finalMessage: "Demo next step: Send matching stock and available test-drive times.",
+        recommendedNextStep:
+          "Send matching vehicles, confirm finance or trade-in details, and offer a test-drive appointment.",
+        flow: [
+          {
+            key: "name",
+            label: "Name",
+            prompt: "Hi, I am the dealership sales assistant. I can help the team understand what you are looking for. What is your name?",
+            quickReplies: [],
+          },
+          {
+            key: "vehicle",
+            label: "Vehicle interest",
+            prompt: "What vehicle or type of vehicle are you interested in?",
+            quickReplies: ["SUV", "Performance car", "Bakkie", "Still deciding"],
+          },
+          {
+            key: "budget",
+            label: "Budget",
+            prompt: "What budget range should the sales team keep in mind?",
+            quickReplies: ["Under R300k", "R300k-R600k", "R600k-R1m", "R1m+"],
+          },
+          {
+            key: "payment",
+            label: "Payment method",
+            prompt: "Are you planning to buy cash, use finance, or compare both options?",
+            quickReplies: ["Cash", "Finance", "Compare both", "Not sure yet"],
+          },
+          {
+            key: "tradeIn",
+            label: "Trade-in",
+            prompt: "Do you have a trade-in vehicle?",
+            quickReplies: ["Yes", "No", "Maybe", "Need valuation"],
+          },
+          {
+            key: "timeline",
+            label: "Timeline",
+            prompt: "When are you hoping to buy or test drive?",
+            quickReplies: ["Today", "This week", "This month", "Just browsing"],
+          },
+          {
+            key: "contact",
+            label: "Preferred follow-up",
+            prompt: "How would you prefer the sales team to follow up?",
+            quickReplies: ["WhatsApp", "Phone call", "Email", "Send stock first"],
+          },
+        ],
+        scoreLead(answers) {
+          const timeline = (answers.timeline || "").toLowerCase();
+          const payment = (answers.payment || "").toLowerCase();
+
+          if (timeline.includes("today") || timeline.includes("week")) {
+            return payment.includes("cash") || payment.includes("finance") ? "Hot" : "Warm";
+          }
+
+          if (timeline.includes("month")) {
+            return "Warm";
+          }
+
+          return answers.timeline ? "Early interest" : "Not enough information yet";
+        },
+      };
+    </script>
+    <script src="agent-demo.js?v=20260525"></script>
+  </body>
+</html>

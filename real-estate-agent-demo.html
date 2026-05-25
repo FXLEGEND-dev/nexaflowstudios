@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Try a browser-based real estate AI lead qualification demo by NexaFlow AI Studio for small and mid-sized property businesses."
+    >
+    <meta name="theme-color" content="#0f766e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Real Estate AI Agent Demo | NexaFlow AI Studio">
+    <meta
+      property="og:description"
+      content="Try a sample AI assistant that collects property lead details and prepares an estate-agent-ready summary."
+    >
+    <meta property="og:url" content="https://fxlegend-dev.github.io/nexaflowstudios/real-estate-agent-demo.html">
+    <meta property="og:site_name" content="NexaFlow AI Studio">
+    <link rel="canonical" href="https://fxlegend-dev.github.io/nexaflowstudios/real-estate-agent-demo.html">
+    <title>Real Estate AI Agent Demo | NexaFlow AI Studio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css?v=20260525">
+    <link rel="stylesheet" href="agent-demo.css?v=20260525">
+  </head>
+  <body class="agent-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand-mark" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" data-menu-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#demos">Demos</a>
+          <a href="car-sales-agent-demo.html">Car Sales Demo</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="index.html#contact">Book Free Review</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="agent-hero">
+        <div class="agent-hero-copy">
+          <p class="eyebrow">Interactive demo</p>
+          <h1>Try The Real Estate AI Agent</h1>
+          <p>
+            This browser demo shows how an AI assistant can qualify property leads, collect buyer or seller details, and
+            prepare a clean summary for a real estate agent or agency.
+          </p>
+          <div class="agent-hero-actions">
+            <a class="button primary" href="#agent-demo">Start Demo</a>
+            <a class="button secondary dark-secondary" href="index.html#demos">See All Demos</a>
+          </div>
+        </div>
+        <div class="agent-note">
+          <strong>Demo mode</strong>
+          <span>No private data is stored. This version runs only in your browser.</span>
+        </div>
+      </section>
+
+      <section class="agent-workspace" id="agent-demo" aria-label="Real estate AI agent demo">
+        <div class="agent-chat-panel">
+          <div class="agent-panel-header">
+            <div>
+              <p class="eyebrow">Property lead assistant</p>
+              <h2>Lead Qualification Chat</h2>
+            </div>
+            <button class="button secondary reset-button" type="button" data-agent-reset>Reset</button>
+          </div>
+
+          <div class="agent-chat-window" data-agent-chat aria-live="polite"></div>
+
+          <form class="agent-input-row" data-agent-form>
+            <label class="sr-only" for="agentInput">Type your response</label>
+            <input id="agentInput" data-agent-input type="text" autocomplete="off" placeholder="Type your answer..." required>
+            <button class="button primary" type="submit">Send</button>
+          </form>
+
+          <div class="quick-replies" data-quick-replies aria-label="Quick reply options"></div>
+        </div>
+
+        <aside class="agent-summary-panel" aria-labelledby="summaryPanelTitle">
+          <p class="eyebrow">Agent view</p>
+          <h2 id="summaryPanelTitle">Live Property Lead Summary</h2>
+          <div class="agent-summary" data-agent-summary>
+            <p class="empty-summary">The lead summary will appear here as the conversation progresses.</p>
+          </div>
+          <button class="button primary copy-button" type="button" data-copy-summary disabled>Copy Summary</button>
+          <p class="copy-status" role="status" data-copy-status></p>
+        </aside>
+      </section>
+
+      <section class="section agent-explainer" aria-labelledby="agentExplainerTitle">
+        <div class="section-heading">
+          <p class="eyebrow">What this proves</p>
+          <h2 id="agentExplainerTitle">A Real Estate Team Gets Better Lead Details Before Replying</h2>
+          <p>
+            The first version can be AI-assisted: it gathers useful details, prepares a summary, and helps the agent
+            reply faster. Full website, WhatsApp, email, or CRM connections can be added later.
+          </p>
+        </div>
+        <div class="deliverable-grid">
+          <div>Buyer, renter, or seller intake</div>
+          <div>Budget and location capture</div>
+          <div>Viewing readiness</div>
+          <div>Finance/pre-approval status</div>
+          <div>Agent-ready summary</div>
+          <div>Clear next-step recommendation</div>
+        </div>
+      </section>
+
+      <section class="section demo-cta" aria-labelledby="agentCtaTitle">
+        <div>
+          <p class="eyebrow">For small and mid-sized property businesses</p>
+          <h2 id="agentCtaTitle">This Demo Can Become A Real Client System</h2>
+          <p>
+            NexaFlow can adapt this flow for estate agents, property managers, rental teams, and property consultants.
+          </p>
+        </div>
+        <a class="button primary" href="index.html#contact">Book A Free AI Review</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand-mark footer-brand" href="index.html" aria-label="NexaFlow AI Studio home">
+          <span class="brand-icon" aria-hidden="true">N</span>
+          <span>
+            <strong>NexaFlow</strong>
+            <small>AI Studio</small>
+          </span>
+        </a>
+        <p>Practical AI systems for small and mid-sized businesses.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#demos">Demos</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260525"></script>
+    <script>
+      window.nexaAgentDemo = {
+        botLabel: "Property AI Assistant",
+        leadLabel: "Property Lead",
+        summaryTitle: "Real Estate Lead Summary",
+        bridgeMessage:
+          "Thanks. I will ask a few quick questions so the agent can understand your property needs and reply with the right next step.",
+        completionMessage:
+          "Great. I have prepared a clear summary for the real estate team so they can follow up with the right property options or appointment times.",
+        finalMessage: "Demo next step: Send matching listings or confirm a viewing call.",
+        recommendedNextStep:
+          "Send matching properties or book a short call to confirm requirements and viewing availability.",
+        flow: [
+          {
+            key: "name",
+            label: "Name",
+            prompt: "Hi, I am the property lead assistant. I can help the agent understand what you need. What is your name?",
+            quickReplies: [],
+          },
+          {
+            key: "intent",
+            label: "Lead type",
+            prompt: "Are you looking to buy, rent, sell, or get a property valuation?",
+            quickReplies: ["Buy", "Rent", "Sell", "Valuation"],
+          },
+          {
+            key: "propertyType",
+            label: "Property type",
+            prompt: "What type of property are you interested in?",
+            quickReplies: ["Apartment", "House", "Townhouse", "Commercial"],
+          },
+          {
+            key: "area",
+            label: "Preferred area",
+            prompt: "Which area or city should the agent focus on?",
+            quickReplies: ["Cape Town", "Johannesburg", "Dubai", "Still deciding"],
+          },
+          {
+            key: "budget",
+            label: "Budget",
+            prompt: "What budget range should the agent keep in mind?",
+            quickReplies: ["Under R1m", "R1m-R2m", "R2m-R5m", "R5m+"],
+          },
+          {
+            key: "finance",
+            label: "Finance status",
+            prompt: "Are you cash-ready, pre-approved, or still arranging finance?",
+            quickReplies: ["Cash buyer", "Pre-approved", "Need finance", "Not sure"],
+          },
+          {
+            key: "timeline",
+            label: "Timeline",
+            prompt: "When would you like to move forward?",
+            quickReplies: ["This week", "This month", "1-3 months", "Just browsing"],
+          },
+        ],
+        scoreLead(answers) {
+          const timeline = (answers.timeline || "").toLowerCase();
+          const finance = (answers.finance || "").toLowerCase();
+
+          if (timeline.includes("week") && (finance.includes("cash") || finance.includes("pre-approved"))) {
+            return "Hot";
+          }
+
+          if (timeline.includes("month")) {
+            return "Warm";
+          }
+
+          return answers.timeline ? "Early interest" : "Not enough information yet";
+        },
+      };
+    </script>
+    <script src="agent-demo.js?v=20260525"></script>
+  </body>
+</html>

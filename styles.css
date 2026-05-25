@@ -601,6 +601,38 @@ textarea:focus-visible {
   justify-content: flex-end;
 }
 
+.demo-card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.demo-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 340px;
+  padding: 26px;
+}
+
+.demo-card h3 {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.demo-card p:not(.eyebrow) {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.demo-card .demo-preview-actions {
+  justify-content: flex-start;
+}
+
 .results-section {
   max-width: none;
   padding-left: 0;
@@ -1286,6 +1318,7 @@ textarea:focus-visible {
   .service-grid,
   .timeline,
   .followup-grid,
+  .demo-card-grid,
   .deliverable-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1356,6 +1389,7 @@ textarea:focus-visible {
   .service-grid,
   .timeline,
   .followup-grid,
+  .demo-card-grid,
   .deliverable-grid {
     grid-template-columns: 1fr;
   }
