@@ -45,14 +45,27 @@ contactForm.addEventListener("submit", (event) => {
   const name = formData.get("name").trim();
   const email = formData.get("email").trim();
   const business = formData.get("business").trim();
+  const preferredDate = formData.get("preferredDate");
+  const preferredTime = formData.get("preferredTime");
+  const contactMethod = formData.get("contactMethod");
   const goal = formData.get("goal").trim();
 
-  const subject = encodeURIComponent(`Free AI Review Request from ${name}`);
+  const subject = encodeURIComponent(`Free AI Review Appointment Request from ${name}`);
   const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\nBusiness type: ${business}\n\nWhat they want AI to help with:\n${goal}`
+    [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Business type: ${business}`,
+      `Preferred appointment date: ${preferredDate}`,
+      `Preferred appointment time: ${preferredTime}`,
+      `Best contact method: ${contactMethod}`,
+      "",
+      "What they want AI to help with:",
+      goal,
+    ].join("\n")
   );
 
-  formStatus.textContent = "Opening your email app with the request details...";
+  formStatus.textContent = "Opening your email app with the appointment request...";
   window.location.href = `mailto:${businessConfig.contactEmail}?subject=${subject}&body=${body}`;
 });
 

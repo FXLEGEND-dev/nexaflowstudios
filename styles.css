@@ -811,11 +811,39 @@ textarea:focus-visible {
   padding: 24px;
 }
 
+.form-heading {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 4px;
+  padding-bottom: 14px;
+}
+
+.form-heading h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.form-heading p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-grid > div {
+  display: grid;
+  gap: 12px;
+}
+
 .contact-form label {
   font-weight: 800;
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   background: #fbfdff;
   border: 1px solid var(--line);
@@ -824,6 +852,10 @@ textarea:focus-visible {
   min-height: 48px;
   padding: 12px 14px;
   resize: vertical;
+}
+
+.contact-form select {
+  cursor: pointer;
 }
 
 .contact-form textarea {
@@ -1430,6 +1462,7 @@ textarea:focus-visible {
   }
 
   .agent-panel-header,
+  .form-grid,
   .agent-input-row {
     align-items: stretch;
     grid-template-columns: 1fr;

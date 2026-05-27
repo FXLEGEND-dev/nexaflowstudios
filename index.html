@@ -382,10 +382,10 @@
       <section class="section contact-section" id="contact" aria-labelledby="contactTitle">
         <div class="contact-copy">
           <p class="eyebrow">Free AI review</p>
-          <h2 id="contactTitle">Want To See Where AI Can Help Your Business?</h2>
+          <h2 id="contactTitle">Book A Free AI Review Appointment</h2>
           <p>
-            Send a few details and we will identify one simple system that could save time or improve your customer
-            experience.
+            Choose a preferred time and send a few details. We will review your business and identify one simple AI
+            system that could save time, improve response speed, or help you handle leads better.
           </p>
           <div class="contact-methods">
             <a href="mailto:shekinahleope24@gmail.com" data-contact-email-link>Email shekinahleope24@gmail.com</a>
@@ -397,6 +397,11 @@
         </div>
 
         <form class="contact-form" data-contact-form>
+          <div class="form-heading">
+            <h3>Review appointment request</h3>
+            <p>Pick the best time for you. We will confirm the appointment by email or WhatsApp.</p>
+          </div>
+
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
 
@@ -406,14 +411,34 @@
           <label for="business">Business type</label>
           <input id="business" name="business" type="text" placeholder="Example: fitness coach, salon, consultant" required>
 
+          <div class="form-grid">
+            <div>
+              <label for="preferredDate">Preferred date</label>
+              <input id="preferredDate" name="preferredDate" type="date" required>
+            </div>
+            <div>
+              <label for="preferredTime">Preferred time</label>
+              <input id="preferredTime" name="preferredTime" type="time" required>
+            </div>
+          </div>
+
+          <label for="contactMethod">Best contact method</label>
+          <select id="contactMethod" name="contactMethod" required>
+            <option value="">Choose one</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Email">Email</option>
+            <option value="Phone call">Phone call</option>
+            <option value="Google Meet / Zoom">Google Meet / Zoom</option>
+          </select>
+
           <label for="goal">What would you like AI to help with?</label>
           <textarea id="goal" name="goal" rows="5" required></textarea>
 
-          <button class="button primary form-button" type="submit">Request Free Review</button>
+          <button class="button primary form-button" type="submit">Request Review Appointment</button>
           <p class="form-status" role="status" data-form-status></p>
           <p class="privacy-note">
-            Your details are only used to respond to your AI review request. This static site does not store form
-            submissions.
+            Your details are only used to respond to your review appointment request. This static site does not store
+            form submissions.
           </p>
         </form>
       </section>
