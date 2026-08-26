@@ -1,8 +1,8 @@
 @echo off
-title NexaFlow AI Studio Website
+title Levarech AI Website
 cd /d "%~dp0"
 
-echo Starting NexaFlow AI Studio website...
+echo Starting Levarech AI website...
 echo.
 echo If the browser does not open automatically, go to:
 echo http://localhost:5500

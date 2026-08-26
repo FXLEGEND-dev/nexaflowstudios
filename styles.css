@@ -1,17 +1,17 @@
 :root {
-  --bg: #f6f8fb;
+  --bg: #f7f4ec;
   --surface: #ffffff;
-  --surface-soft: #eef4f8;
-  --ink: #111827;
-  --muted: #5b677a;
-  --line: #dce5ec;
-  --primary: #0f766e;
-  --primary-strong: #115e59;
-  --primary-soft: #d6f2ef;
-  --accent: #2563eb;
-  --accent-soft: #dbeafe;
-  --warm: #f59e0b;
-  --shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  --surface-soft: #f1eadc;
+  --ink: #11100c;
+  --muted: #665f52;
+  --line: #ded2ba;
+  --primary: #a56d15;
+  --primary-strong: #7c4b08;
+  --primary-soft: #f5e7c4;
+  --accent: #d8aa4b;
+  --accent-soft: #fbf0d1;
+  --warm: #d8aa4b;
+  --shadow: 0 24px 60px rgba(17, 16, 12, 0.13);
   --radius: 8px;
   --max: 1180px;
 }
@@ -86,8 +86,8 @@ svg {
 }
 
 .site-header {
-  background: rgba(246, 248, 251, 0.86);
-  border-bottom: 1px solid rgba(220, 229, 236, 0.8);
+  background: rgba(247, 244, 236, 0.9);
+  border-bottom: 1px solid rgba(222, 210, 186, 0.82);
   left: 0;
   position: sticky;
   right: 0;
@@ -119,10 +119,11 @@ svg {
 
 .brand-icon {
   align-items: center;
-  background: var(--ink);
+  background: linear-gradient(135deg, #0b0a08, #a56d15);
   border-radius: 8px;
-  color: #fff;
+  color: #ffe7a5;
   display: inline-flex;
+  font-size: 13px;
   font-weight: 800;
   height: 42px;
   justify-content: center;
@@ -209,14 +210,22 @@ svg {
 
 .hero-background {
   background:
-    linear-gradient(120deg, rgba(17, 24, 39, 0.78), rgba(15, 118, 110, 0.62)),
-    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.42), transparent 34%),
-    #0f172a;
+    linear-gradient(90deg, rgba(4, 4, 4, 0.98) 0%, rgba(8, 7, 6, 0.92) 42%, rgba(8, 7, 6, 0.52) 72%, rgba(5, 4, 3, 0.7) 100%),
+    url("assets/levarech-ai-brand.png") center right / cover no-repeat,
+    #050403;
+  inset: 0;
+  position: absolute;
+}
+
+.hero-background::after {
+  background: linear-gradient(180deg, rgba(216, 170, 75, 0.14), transparent 42%, rgba(216, 170, 75, 0.16));
+  content: "";
   inset: 0;
   position: absolute;
 }
 
 .workflow-board {
+  display: none;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
   box-shadow: 0 36px 90px rgba(0, 0, 0, 0.28);
@@ -326,7 +335,7 @@ svg {
 }
 
 .hero-section .eyebrow {
-  color: #a7f3d0;
+  color: #f8dc8f;
 }
 
 h1,
@@ -397,12 +406,12 @@ textarea:focus-visible {
 }
 
 .primary {
-  background: var(--primary);
-  color: #fff;
+  background: linear-gradient(135deg, #d8aa4b, #a56d15);
+  color: #11100c;
 }
 
 .primary:hover {
-  background: var(--primary-strong);
+  background: linear-gradient(135deg, #efc96b, #8e570d);
 }
 
 .secondary {
@@ -413,6 +422,20 @@ textarea:focus-visible {
 
 .secondary:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.demo-card .secondary,
+.contact-form .secondary,
+.reset-button {
+  background: var(--surface-soft);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.demo-card .secondary:hover,
+.contact-form .secondary:hover,
+.reset-button:hover {
+  background: var(--primary-soft);
 }
 
 .hero-stats {
@@ -481,19 +504,19 @@ textarea:focus-visible {
 .service-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .service-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  min-height: 310px;
+  min-height: 330px;
   padding: 24px;
 }
 
 .service-card.featured {
-  background: var(--ink);
+  background: linear-gradient(160deg, #11100c, #2a1c0b);
   color: #fff;
 }
 
@@ -533,15 +556,93 @@ textarea:focus-visible {
 
 .featured .card-icon {
   background: rgba(255, 255, 255, 0.14);
-  color: #a7f3d0;
+  color: #f8dc8f;
 }
 
 .service-label {
-  color: #a7f3d0;
+  color: var(--primary-strong);
   font-size: 13px;
   font-weight: 800;
   margin-bottom: 12px;
   text-transform: uppercase;
+}
+
+.featured .service-label,
+.featured-package .service-label {
+  color: #f8dc8f;
+}
+
+.package-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.package-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 14px;
+  grid-template-rows: auto auto auto 1fr auto;
+  min-height: 470px;
+  padding: 26px;
+}
+
+.package-card h3,
+.package-card p {
+  margin-bottom: 0;
+}
+
+.package-card p:not(.service-label):not(.price-line) {
+  color: var(--muted);
+}
+
+.package-card ul {
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.featured-package {
+  background: linear-gradient(160deg, #11100c, #2a1c0b);
+  color: #fff;
+}
+
+.featured-package p:not(.service-label):not(.price-line),
+.featured-package ul {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.featured-package .price-line {
+  border-top-color: rgba(255, 255, 255, 0.16);
+  color: #fff !important;
+}
+
+.demo-strip {
+  align-items: center;
+  background: linear-gradient(135deg, #11100c, #2a1c0b);
+  border-radius: 8px;
+  color: #fff;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 22px;
+  padding: 30px;
+}
+
+.demo-strip p {
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 0;
+}
+
+.demo-strip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .offer-panel {
@@ -579,7 +680,7 @@ textarea:focus-visible {
 
 .demo-preview-panel {
   align-items: center;
-  background: linear-gradient(135deg, var(--ink), #164e63);
+  background: linear-gradient(135deg, var(--ink), #2a1c0b);
   border-radius: 8px;
   color: #fff;
   display: grid;
@@ -631,6 +732,10 @@ textarea:focus-visible {
 
 .demo-card .demo-preview-actions {
   justify-content: flex-start;
+}
+
+.example-only {
+  box-shadow: none;
 }
 
 .results-section {
@@ -694,7 +799,7 @@ textarea:focus-visible {
 }
 
 .trust-panel {
-  background: var(--ink);
+  background: linear-gradient(135deg, #11100c, #2a1c0b);
   color: #fff;
   display: grid;
   gap: 48px;
@@ -910,8 +1015,8 @@ textarea:focus-visible {
 
 .demo-hero {
   background:
-    linear-gradient(120deg, rgba(17, 24, 39, 0.9), rgba(15, 118, 110, 0.75)),
-    #0f172a;
+    linear-gradient(120deg, rgba(17, 16, 12, 0.92), rgba(124, 75, 8, 0.72)),
+    #11100c;
   color: #fff;
   padding: 110px 24px 90px;
 }
@@ -1112,8 +1217,8 @@ textarea:focus-visible {
 .agent-hero {
   align-items: end;
   background:
-    linear-gradient(120deg, rgba(17, 24, 39, 0.92), rgba(15, 118, 110, 0.78)),
-    #0f172a;
+    linear-gradient(120deg, rgba(17, 16, 12, 0.92), rgba(124, 75, 8, 0.72)),
+    #11100c;
   color: #fff;
   display: grid;
   gap: 32px;
@@ -1351,8 +1456,17 @@ textarea:focus-visible {
   .timeline,
   .followup-grid,
   .demo-card-grid,
+  .package-grid,
   .deliverable-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .demo-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-strip-actions {
+    justify-content: flex-start;
   }
 }
 
@@ -1422,11 +1536,16 @@ textarea:focus-visible {
   .timeline,
   .followup-grid,
   .demo-card-grid,
+  .package-grid,
   .deliverable-grid {
     grid-template-columns: 1fr;
   }
 
   .service-card {
+    min-height: auto;
+  }
+
+  .package-card {
     min-height: auto;
   }
 

@@ -1,4 +1,4 @@
-# How To Run The NexaFlow Website
+# How To Run The Levarech Website
 
 This website is built as a simple static site. That means you do not need npm, React, Next.js, or any install step.
 
@@ -70,7 +70,7 @@ Change only the email address inside the quotes.
 After you preview the site, ask Codex to:
 
 ```text
-Make the NexaFlow site ready to publish
+Make the Levarech site ready to publish
 ```
 
 That can include a real domain email, stronger SEO text, contact details, and hosting guidance.

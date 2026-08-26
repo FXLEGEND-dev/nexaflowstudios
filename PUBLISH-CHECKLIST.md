@@ -1,4 +1,4 @@
-# NexaFlow Website Publish Checklist
+# Levarech Website Publish Checklist
 
 Use this before putting the site online.
 
@@ -21,7 +21,7 @@ Also update the structured data email and telephone in `index.html` if you chang
 Current name:
 
 ```text
-NexaFlow AI Studio
+Levarech AI
 ```
 
 Keep it if you like it. If not, ask Codex to rename the site everywhere.
@@ -31,7 +31,7 @@ Keep it if you like it. If not, ask Codex to rename the site everywhere.
 Until a custom domain is connected, the GitHub Pages URL should be:
 
 ```text
-https://fxlegend-dev.github.io/nexaflowstudios/
+https://fxlegend-dev.github.io/levarechai/
 ```
 
 ## 4. Choose A Custom Domain Later
@@ -39,12 +39,12 @@ https://fxlegend-dev.github.io/nexaflowstudios/
 Good domain examples:
 
 ```text
-nexaflowai.com
-nexaflowstudio.com
-nexaflowautomation.com
+Levarechai.com
+Levarechstudio.com
+Levarechautomation.com
 ```
 
-Avoid domains that make the business sound unrelated, overly corporate, or confusing. For example, `nexaflowmeter.com` does not fit an AI services studio well.
+Avoid domains that make the business sound unrelated, overly corporate, or confusing. For example, `Levarechmeter.com` does not fit an AI services studio well.
 
 Before buying, search the name and domain to avoid obvious conflicts.
 
