@@ -31,7 +31,7 @@ Keep it if you like it. If not, ask Codex to rename the site everywhere.
 Until a custom domain is connected, the GitHub Pages URL should be:
 
 ```text
-https://fxlegend-dev.github.io/levarech-ai/
+https://fxlegend-dev.github.io/nexaflowstudios/
 ```
 
 ## 4. Choose A Custom Domain Later
